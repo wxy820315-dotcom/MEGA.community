@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>传播内容设计 × 脚本拍摄SOP</title>
+<style>
+  :root{--bg:#0c0f1c;--panel:#131a33;--text:#eef2ff;--muted:#a8b0d9;--b:#2b3673;--chip:#1a2247;--ok:#4ade80;--warn:#ffb86b;--brand:#7c8cff;--accent:#a78bfa}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 700px at 80% -10%,#1d2352 0%,#0c0f1c 60%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+  .wrap{max-width:1200px;margin:auto;padding:36px 20px 80px}
+  h1{margin:0 0 8px;font-size:30px;letter-spacing:.3px}
+  .sub{color:var(--muted);margin:0 0 22px}
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+  .card{grid-column:span 6;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid var(--b);border-radius:18px;padding:18px;position:relative;overflow:hidden}
+  @media (max-width:980px){.card{grid-column:span 12}}
+  .head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+  .head .dot{width:12px;height:12px;border-radius:50%;background:var(--brand);box-shadow:0 0 24px var(--brand)}
+  .head h2{margin:0;font-size:20px}
+  .k{display:inline-flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  .k .chip{padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--b);font-size:12px;color:var(--muted)}
+  .sep{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent);margin:12px 0}
+  .sop{display:grid;grid-template-columns:160px 1fr;gap:10px}
+  .sop b{color:#cfd6ff}
+  .sop .lab{color:var(--muted)}
+  .tips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .tip{flex:1;min-width:180px;border:1px dashed var(--b);border-radius:12px;padding:10px;background:rgba(255,255,255,.03)}
+  .flow{margin-top:14px}
+  .flow h3{margin:0 0 6px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px}
+  .steps{display:flex;gap:8px;flex-wrap:wrap}
+  .step{padding:8px 12px;border:1px solid var(--b);border-radius:999px;background:rgba(255,255,255,.03);font-size:13px}
+  .step:after{content:"→";margin-left:8px;color:var(--muted)}
+  .step:last-child:after{content:""}
+  .tag{position:absolute;right:14px;top:14px;font-size:12px;padding:4px 8px;border:1px solid var(--b);border-radius:8px;color:var(--muted);background:rgba(255,255,255,.04)}
+  .ok{color:var(--ok)} .warn{color:var(--warn)} .brand{color:var(--brand)}
+  footer{margin-top:26px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>传播内容设计 × 脚本拍摄 SOP</h1>
+    <p class="sub">把“方向页”变成“可执行页”。四种内容方向，配套标准化拍摄流程与验证指标。</p>
+
+    <section class="grid" aria-label="SOP 版块">
+      <!-- 共情式话题 -->
+      <article class="card">
+        <div class="head"><span class="dot"></span><h2>共情式话题（被卷垮 / 规划误区）</h2></div>
+        <div class="k">
+          <span class="chip">传播目标：情绪代入</span>
+          <span class="chip">推荐模型：轻翻转 × 多巴胺</span>
+          <span class="chip">时长：25–35s</span>
+        </div>
+        <div class="sep"></div>
+        <div class="sop">
+          <div class="lab">场景</div><div>家中书桌/家长刷手机；生活化杂物保留，真实感优先。</div>
+          <div class="lab">开场钩子</div><div>2秒反问句：<b>“成绩差是懒？不，是路径没拆开。”</b></div>
+          <div class="lab">结构</div><div>熟悉语境 → 情绪共鸣 → 教育洞察（规划意识） → <b>CTA：测评/留言“规划”</b></div>
+          <div class="lab">画面</div><div>家长近景表情 + 手机屏反光；字幕高对比、≤15字/句。</div>
+        </div>
+        <div class="tips">
+          <div class="tip"><b class="brand">KPI</b><br>首3秒停留、完播率、收藏率</div>
+          <div class="tip"><b class="ok">检查项</b><br>字幕≥96px；前2秒一定要有“反问句”。</div>
+        </div>
+        <div class="flow">
+          <h3>拍摄流程</h3>
+          <div class="steps"><span class="step">布景</span><span class="step">开场反问</span><span class="step">共情镜头</span><span class="step">洞察句</span><span class="step">CTA</span></div>
+        </div>
+        <span class="tag">话题型</span>
+      </article>
+
+      <!-- 故事案例分享（美嘉五子） -->
+      <article class="card">
+        <div class="head"><span class="dot"></span><h2>故事案例分享（美嘉五子）</h2></div>
+        <div class="k">
+          <span class="chip">传播目标：建立信任锚点</span>
+          <span class="chip">推荐模型：情绪镜像 × 共感</span>
+          <span class="chip">时长：45–60s</span>
+        </div>
+        <div class="sep"></div>
+        <div class="sop">
+          <div class="lab">人物</div><div>5位代表学生：国家/专业/起点多样化；家长允许出镜或变声。</div>
+          <div class="lab">结构</div><div>① 困境 → ② 陪伴过程 → ③ 结果（Offer/奖学金/回本周期）</div>
+          <div class="lab">拍法</div><div>第一人称口述 + 顾问工作片段穿插；固定构图、柔光、自然声。</div>
+          <div class="lab">结尾</div><div>定帧 Offer，口播：<b>“不是偶然，是规划把不确定变成确定。”</b> → 评论区关键词【五子】</div>
+        </div>
+        <div class="tips">
+          <div class="tip"><b class="brand">KPI</b><br>表单完成率、私信量、预约量</div>
+          <div class="tip"><b class="ok">素材</b><br>录取信、时间线、奖学金金额、课程表、家长感谢信</div>
+        </div>
+        <div class="flow">
+          <h3>拍摄流程</h3>
+          <div class="steps"><span class="step">人物选取</span><span class="step">口述+B-roll</span><span class="step">证据条</span><span class="step">峰终定格</span><span class="step">CTA</span></div>
+        </div>
+        <span class="tag">案例型</span>
+      </article>
+
+      <!-- 接种式辟谣 -->
+      <article class="card">
+        <div class="head"><span class="dot"></span><h2>接种式辟谣（签证 / 政策）</h2></div>
+        <div class="k">
+          <span class="chip">传播目标：降低恐慌，建立权威</span>
+          <span class="chip">推荐模型：免疫接种 × 权威引用</span>
+          <span class="chip">时长：20–30s</span>
+        </div>
+        <div class="sep"></div>
+        <div class="sop">
+          <div class="lab">脚本</div><div>谣言 → 数据 → 官方链接 → 行动建议（适用人群/截止节点）</div>
+          <div class="lab">开场</div><div><b>“别被这条新闻吓到了，签证并没有停发。”</b></div>
+          <div class="lab">画面</div><div>屏幕录制+镜头扫过官网原文；关键数字高亮3秒。</div>
+          <div class="lab">结尾</div><div>置顶“官方原文链接”与核查清单下载；关键词【核查】。</div>
+        </div>
+        <div class="tips">
+          <div class="tip"><b class="brand">KPI</b><br>收藏率、外链点击率、咨询质量评分</div>
+          <div class="tip"><b class="ok">注意</b><br>引用需标来源；避免恐慌式标题；配色蓝白保持理性感。</div>
+        </div>
+        <div class="flow">
+          <h3>拍摄流程</h3>
+          <div class="steps"><span class="step">列谣言</span><span class="step">给证据</span><span class="step">说做法</span><span class="step">放链接</span></div>
+        </div>
+        <span class="tag">权威型</span>
+      </article>
+
+      <!-- 展会 Reaction -->
+      <article class="card">
+        <div class="head"><span class="dot"></span><h2>展会 Reaction（活动回顾/口碑沉淀）</h2></div>
+        <div class="k">
+          <span class="chip">传播目标：社会认同与热度</span>
+          <span class="chip">推荐模型：群体记忆 × 社会证明</span>
+          <span class="chip">时长：25–35s</span>
+        </div>
+        <div class="sep"></div>
+        <div class="sop">
+          <div class="lab">结构</div><div>外景人流 → 互动近景 → 顾问讲解 → 家长反馈 → Logo收束</div>
+          <div class="lab">口播</div><div>“这次最多的反馈是：<b>终于有人把政策讲明白了。</b>”</div>
+          <div class="lab">字幕</div><div>高频词：真实反馈 / 政策解析 / 报名火热；每10秒出现一次。</div>
+          <div class="lab">结尾</div><div>Logo + 口号“<b>不贩卖焦虑，只提供确定。</b>”→ CTA：现场预约二维码</div>
+        </div>
+        <div class="tips">
+          <div class="tip"><b class="brand">KPI</b><br>站位到场率、社群新增数、活动后7日咨询</div>
+          <div class="tip"><b class="ok">拍摄</b><br>手机云台+广角镜头；收音优先；补拍家长一句话评价。</div>
+        </div>
+        <div class="flow">
+          <h3>拍摄流程</h3>
+          <div class="steps"><span class="step">外景开场</span><span class="step">互动特写</span><span class="step">讲解镜头</span><span class="step">家长反馈</span><span class="step">Logo+CTA</span></div>
+        </div>
+        <span class="tag">活动型</span>
+      </article>
+    </section>
+
+    <footer>
+      <p>通用规范：字幕≥96px；每条视频只解决一个心理阻塞点；固定“证据条”位置；评论区关键词引导；7日复盘。</p>
+    </footer>
+  </div>
+</body>
+</html>
